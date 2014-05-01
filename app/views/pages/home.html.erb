@@ -1,0 +1,124 @@
+<div id="welcome-wrapper">
+
+<h1>Welcome to Docstoc Custom</h1>
+<p class="lead">Let's set up your account quickly.</p>
+
+<div class="page-header">
+<h3>1. Add Basic information about your business</h3>
+<p>Adding your basic company information makes it easy for us to prefill on each document you create and recommend content to you better.</p>
+</div>
+
+<form role="form">
+  
+  <h4>Contact Info</h4>
+
+  <div class="form-group">
+    <label>Company Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1">
+  </div>
+
+  <div class="row">
+  <div class="col-md-4">
+  	<div class="form-group">
+  	<label>Phone Number</label>
+  	<input class="form-control">
+  	</div>
+  </div>
+  <div class="col-md-4">
+  	<div class="form-group">
+  	<label>Fax Number</label>
+  	<input class="form-control">
+  	</div>
+  </div>
+  <div class="col-md-4">
+  	<div class="form-group">
+  	<label>Phone Number</label>
+  	<input class="form-control">
+  	</div>
+  </div>
+
+
+  </div>
+
+<h4>Address</h4>
+
+<div class="row">
+	  <div class="col-md-10">
+		  	<div class="form-group">
+		  	  <label>Address</label>
+		  	  <input class="form-control">
+		  	</div>
+	  </div>
+	    <div class="col-md-2">
+	  	  	<div class="form-group">
+	  	  	  <label>Unit, Ste</label>
+	  	  	  <input class="form-control">
+	  	  	</div>
+	    </div>
+    <div class="col-md-4">
+  	  	<div class="form-group">
+  	  	  <label>City</label>
+  	  	  <input class="form-control">
+  	  	</div>
+    </div>
+      <div class="col-md-4">
+    	  	<div class="form-group">
+    	  	  <label>State</label>
+    	  	  <input class="form-control">
+    	  	</div>
+      </div>
+        <div class="col-md-4">
+      	  	<div class="form-group">
+      	  	  <label>Zipcode</label>
+      	  	  <input class="form-control">
+      	  	</div>
+        </div>
+  
+
+</div>
+
+  
+  <div class="form-group">
+    <label for="exampleInputFile">Company Logo</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+
+</form>
+
+
+
+<div class="page-header">
+<h3>2. Connect to your cloud storage services</h3>
+<p>You'll be able to sync all of your documents across any of your cloud storage applications. You can choose to keep all versions of each document synced in these cloud storage services as well.</p>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<h2><i class="fa fa-dropbox"></i> Dropbox</h2>
+		<a href="#" class="btn btn-default">Connect</a>
+	</div>
+
+	<div class="col-md-4">
+		<h2><i class="fa fa-windows"></i> Onedrive</h2>
+		<a href="#" class="btn btn-success"><i class="fa fa-check"></i> Connected</a>
+	</div>
+
+	<div class="col-md-4">
+		<h2><i class="fa fa-dropbox"></i> Dropbox</h2>
+		<a href="#" class="btn btn-default">Connect</a>
+	</div>
+
+</div>
+
+<div class="page-header">
+<h3>3. Create & Share Your Documents</h3>
+<p>You can create documents for your clients, vendors and company.</p>
+</div>
+
+<%= link_to documents_path, :class=> 'btn btn-default btn-lg' do %>
+<i class="fa fa-file-text-o"></i>
+Create New Documents 
+<%end%>
+
+
+</div>

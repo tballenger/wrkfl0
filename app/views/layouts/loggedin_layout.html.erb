@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contentnews</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render 'layouts/header' %>
+
+<%= render 'layouts/docstats' if action_name == "documents" %>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-10">
+		<%= yield %>
+	</div>
+	<div id="complete-acct" class="col-md-2">
+		<h5>Account completeness</h5>
+		<div class="progress">
+		  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+		    <span class="sr-only">60% Complete</span>
+		  </div>
+		</div>
+		<div class="list-group">
+		      <a href="#" class="list-group-item">
+		        <h5 class="list-group-item-heading"><i class="fa fa-chevron-right"></i> Basic Info</h5>
+		        
+		      </a>
+		      <a href="#" class="list-group-item">
+		        <h5 class="list-group-item-heading"><i class="fa fa-chevron-right"></i> Connect your cloud storage</h5>
+		        
+		      </a>
+		      <a href="#" class="list-group-item">
+		        <h5 class="list-group-item-heading"><i class="fa fa-chevron-right"></i> Send your documents</h5>
+		        
+		      </a>
+		    </div>
+	</div>
+
+
+</div>
+</div>
+
+</body>
+</html>
